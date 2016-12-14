@@ -1,0 +1,38 @@
+<html ng-app="fileShareApp">
+<head>
+</head>
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="js/angular-route.js"></script>
+<script type="text/javascript" src="js/FileShare.js"></script>
+<link href="ShareAppStyleSheet.css" rel="stylesheet"/>
+<base href="/"/>
+<body>
+	<div>
+		<table style="font-family:Arial">
+			<tr>
+				<td colspan = 2 class="header">
+					<h1>File Sharing Application</h1>
+				</td>
+
+			</tr>
+			<tr>
+				<td class="leftMenu">
+				<a href="home">Home</a>
+				 <br></br> 
+				<a href="login">Login</a>
+				 <br></br> 
+				 <a href="register">Register</a>
+				 </td>
+				<td class="MainContent">
+				<ng-view></ng-view>
+				</td>
+			</tr>
+			<tr>
+				<td colspan =2 class ="Footer">
+				<h1>CopyRight...</h1>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
